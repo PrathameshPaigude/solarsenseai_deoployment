@@ -1,0 +1,155 @@
+.top-app-bar {
+  background-color: #ffffff;
+  height: 64px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.dark .top-app-bar {
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #333;
+  box-shadow: none;
+}
+
+.app-bar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.app-bar-left,
+.app-bar-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.app-bar-right {
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.app-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+  font-size: 1.25rem;
+  gap: 10px;
+}
+
+.logo-icon {
+  color: #ff9800;
+  /* Solar orange */
+  font-size: 1.5rem;
+}
+
+.logo-text {
+  color: #333;
+}
+
+.dark .logo-text {
+  color: #fff;
+}
+
+/* Step Indicator */
+.app-bar-center {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.step-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.step-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: #999;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #eee;
+  color: #777;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.step-item.active {
+  color: #333;
+}
+
+.dark .step-item.active {
+  color: #ddd;
+}
+
+.step-item.active .step-number {
+  background-color: #ff9800;
+  color: white;
+}
+
+.step-item.current {
+  color: #ff9800;
+}
+
+.step-connector {
+  width: 20px;
+  height: 2px;
+  background-color: #eee;
+}
+
+.active+.step-connector {
+  background-color: #ff9800;
+}
+
+/* Buttons */
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  color: #666;
+  transition: background-color 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #333;
+}
+
+.dark .icon-button {
+  color: #aaa;
+}
+
+.dark .icon-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
