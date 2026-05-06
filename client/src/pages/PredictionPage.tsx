@@ -202,8 +202,8 @@ const PredictionPage: React.FC<PredictionPageProps> = ({ latestResult }) => {
               href="https://www.mahadiscom.in/ismart/index.php" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="ui-button secondary-button" 
-              style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', backgroundColor: '#e3f2fd', color: '#1976d2', borderColor: '#1976d2' }}
+              className="ui-button" 
+              style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', backgroundColor: '#4CAF50', color: 'white', border: '1px solid #388E3C', fontWeight: 600, boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}
             >
               Apply for Rooftop Solar and Net Metering
             </a>

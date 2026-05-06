@@ -467,15 +467,7 @@ const SolarAnalysisPage: React.FC<SolarAnalysisPageProps> = ({ onAnalysisComplet
                     <FaArrowLeft /> Back to Map
                 </button>
                 <div className="spacer" style={{ flex: 1 }}></div>
-                <a 
-                    href="https://www.mahadiscom.in/ismart/index.php" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="ui-button secondary-button large" 
-                    style={{ marginRight: '16px', textDecoration: 'none', display: 'flex', alignItems: 'center' }}
-                >
-                    Apply for Rooftop Solar and Net Metering
-                </a>
+
                 <button className="ui-button primary-button large" onClick={handlePrediction} disabled={!pv}>
                     Continue to Financial Prediction <FaArrowRight />
                 </button>
