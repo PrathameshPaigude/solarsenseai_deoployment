@@ -194,10 +194,19 @@ const PredictionPage: React.FC<PredictionPageProps> = ({ latestResult }) => {
             />
           </div>
 
-          <div className="button-group" style={{ display: 'flex', gap: '10px', marginTop: '20px' }}>
+          <div className="button-group" style={{ display: 'flex', gap: '10px', marginTop: '20px', flexWrap: 'wrap' }}>
             <button className="ui-button secondary-button" onClick={() => history.push('/solar-analysis')}>
               <FaArrowLeft /> Back to Analysis
             </button>
+            <a 
+              href="https://www.mahadiscom.in/ismart/index.php" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="ui-button secondary-button" 
+              style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', backgroundColor: '#e3f2fd', color: '#1976d2', borderColor: '#1976d2' }}
+            >
+              Apply for Rooftop Solar and Net Metering
+            </a>
             <button className="ui-button primary-button" onClick={() => history.push('/dashboard')}>
               Go to Dashboard
             </button>
