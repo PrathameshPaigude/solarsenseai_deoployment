@@ -260,11 +260,20 @@ const CarbonCreditsPage: React.FC<CarbonCreditsPageProps> = ({ latestResult }) =
                 </div>
             </div>
 
-            {/* SECTION D: PDF Export */}
-            <div className="actions-section" data-html2canvas-ignore="true">
+            {/* SECTION D: Actions */}
+            <div className="actions-section" data-html2canvas-ignore="true" style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
                 <button className="download-btn" onClick={handleDownloadPdf}>
                     Download Carbon Impact Certificate (PDF)
                 </button>
+                <a 
+                    href="https://indiancarbonmarket.gov.in/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="download-btn" 
+                    style={{ textDecoration: 'none', backgroundColor: '#2196F3' }}
+                >
+                    Participating in the carbon market ecosystem
+                </a>
             </div>
         </div>
     );
